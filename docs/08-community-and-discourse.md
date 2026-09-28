@@ -2,7 +2,7 @@
 
 Public venues, talks, blogs, and social-media signals around **Rzk**, **sHoTT**, and Riehl–Shulman synthetic ∞-category formalization. Dates use Asia/Singapore labels when converted from UTC; otherwise we keep the source’s stated date.
 
-**Verification note.** Zulip, GitHub, arXiv, YouTube, and official MkDocs pages were reachable during research (2026-09-28). **Direct Twitter/X (and Nitter) search was not usable** from this environment (blocked / JS-walled search). **Direct Reddit** (`reddit.com` / `old.reddit.com` HTML & JSON, PullPush) was also **network-blocked or rate-limited**; Reddit coverage below is reconstructed from **Google `site:reddit.com` indexes and public result snippets**, not from logged-in Reddit API dumps. Treat both X and deep Reddit comment trees as **partial / gap-prone**.
+**Verification note.** Zulip, GitHub, arXiv, YouTube, and official MkDocs pages were reachable during research (2026-09-28). **Direct Twitter/X (and Nitter) search was not usable** from this environment (blocked / JS-walled search). **Direct Reddit** (`reddit.com` / `old.reddit.com` HTML & JSON, PullPush) was also **network-blocked or rate-limited** for some paths. A later pass used the **arctic_shift HTTP API** (scoped searches + ID lookup) — see [13](13-reddit-methodology-arctic-shift.md). Early rows below still cite Google snippets where noted; arctic_shift-confirmed rows are marked in the Arctic Shift subsection. Treat X and deep Reddit trees as **partial / gap-prone**.
 
 ---
 
@@ -101,6 +101,24 @@ Examples indexed by Google but **not** about RSTT formalization in Rzk: r/math t
 3. The 2017 paper *was* link-posted once in r/dependent_types; six+ years later there is still no obvious “has anyone tried Rzk?” thread in the indexes we saw.
 
 **Follow-up:** when Reddit is reachable, re-run `rzk`, `rzk-lang`, `sHoTT`, `Kudasov`, and “Yoneda”+Riehl+formalization searches inside r/haskell, r/dependent_types, r/homotopytypetheory, and r/ProgrammingLanguages; archive any new threads in the table above.
+
+### Arctic Shift pass (2026-09-28)
+
+Full write-up: [13-reddit-methodology-arctic-shift.md](13-reddit-methodology-arctic-shift.md).
+
+**Usability verdict.** [ArthurHeitmann/arctic_shift](https://github.com/ArthurHeitmann/arctic_shift) offers dumps, an API (`https://arctic-shift.photon-reddit.com`), and web search/download tools. **Full dumps are impractical here** (~3.12 TB for 2005–2024; ~3.8 TB magnet through 2025-12; recent comment months alone ~32–36 GB `.zst`). The **API is the right lightweight path**, with the documented constraint that keyword `query`/`title`/`body` searches require `subreddit` or `author`.
+
+**Real query outcomes (*not fabricated*).**
+
+| Check | Outcome |
+|-------|---------|
+| `title=rzk` in r/dependent_types, r/homotopytypetheory, r/types, r/math | empty `data` |
+| `body=rzk` in r/dependent_types, r/homotopytypetheory | empty `data` |
+| ID lookup of prior Google-indexed adjacent threads | **confirmed** (scores/dates align; see methodology doc) |
+| `body=simplicial` in r/types | **hit** comment `dsi58ir` on `t3_7pkwbh` (2018-01-11 11:55 SGT, score 2) naming *simplicial type theory* and *cubical type theory* — adjacent math, **not** the Rzk assistant |
+
+Rate limits (429 / timeout) aborted some follow-ups; those are **not** counted as evidence of absence beyond the successful empty responses above.
+
 
 
 ## Twitter / X highlights (limited)

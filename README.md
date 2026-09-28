@@ -24,6 +24,9 @@ This repository is **not** upstream documentation. It is an independent survey t
 | [docs/08-community-and-discourse.md](docs/08-community-and-discourse.md) | Zulip, blogs, talks; Reddit (sparse) + Twitter/X gaps |
 | [docs/09-comparative-notes.md](docs/09-comparative-notes.md) | Deeper compare vs Cubical Agda / directed TT / homotopy.io / Catt |
 | [docs/10-open-questions.md](docs/10-open-questions.md) | Follow-up research questions |
+| [docs/11-metatheory-and-semantics.md](docs/11-metatheory-and-semantics.md) | RSTT↔Rzk faithfulness/conservativity; split extensions; solver |
+| [docs/12-formalization-case-studies.md](docs/12-formalization-case-studies.md) | Yoneda / sHoTT / cofibration case studies (real papers) |
+| [docs/13-reddit-methodology-arctic-shift.md](docs/13-reddit-methodology-arctic-shift.md) | Arctic Shift evaluation; dump sizes; API query results |
 | [docs/sources.md](docs/sources.md) | Bibliography and dated links |
 | [docs/appendix-cli-reference.md](docs/appendix-cli-reference.md) | CLI flags from `rzk/app/Main.hs` |
 
@@ -39,4 +42,4 @@ This repository is **not** upstream documentation. It is an independent survey t
 
 These notes are original English prose for research and learning. Upstream code and docs remain under their own licenses (Rzk package: BSD-3). Cite papers when you reuse mathematical claims.
 
-**Last updated:** 2026-09-28 (Asia/Singapore, UTC+8) — Reddit discourse pass (sparse coverage documented).
+**Last updated:** 2026-09-28 (Asia/Singapore, UTC+8) — metatheory/Yoneda depth + arctic_shift evaluation (no fabricated sources).

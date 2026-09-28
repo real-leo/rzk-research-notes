@@ -6,7 +6,7 @@ Research prompts for later passes on Rzk / sHoTT / related work. Distinguishes *
 
 ## A. Gaps in *this* notes repository’s evidence
 
-1. **Reddit corpus.** Re-fetch when Reddit is reachable; confirm still no Rzk-titled threads and archive any new ones (see [08](08-community-and-discourse.md)).
+1. **Reddit corpus.** Arctic Shift API pass (2026-09-28) found no `title`/`body` hits for `rzk` in key subs; ID-verified adjacent threads — see [13](13-reddit-methodology-arctic-shift.md) and [08](08-community-and-discourse.md). Re-check after rate-limit cooloffs; still skip multi-TB dumps on small boxes.
 2. **Twitter/X corpus.** Live search via Nitter / `site:x.com` failed in the research environment (2026-09-28). Recover dated posts/threads from Riehl, Kudasov/`fizruk`, and HoTT accounts; archive permalinks in [08-community-and-discourse.md](08-community-and-discourse.md).
 3. **Zulip content.** We link the Zulip but did not scrape private/public streams. With permission, summarize recurring themes (solver pain points, implicits roadmap, teaching).
 4. **Blog completeness.** Only two posts listed on the EN blog index at research time; check whether older announcements live only in GitHub Releases / Russian blog.
@@ -19,7 +19,7 @@ Research prompts for later passes on Rzk / sHoTT / related work. Distinguishes *
 
 From Kudasov–Sim–Ahrens [arXiv:2607.12207](https://arxiv.org/abs/2607.12207):
 
-1. **Full conservativity (Conjecture).** Conservativity of declarative Rzk over RSTT is proved for *ext-style hypotheses*; full conservativity without that restriction is conjectural.
+1. **Full conservativity (Conjecture 5.9 in [arXiv:2607.12207](https://arxiv.org/abs/2607.12207)).** Conservativity of declarative Rzk over RSTT is **proved** for *ext-style hypotheses* (Thm. 5.8); full conservativity without that restriction is **conjectural**. Background: [11-metatheory-and-semantics.md](11-metatheory-and-semantics.md).
 2. **Pointwise subsumption / η.** Typing not invariant under η-contraction of subjects in some extension-boundary cases; prototypes exist—should they land in the declarative theory?
 3. **Tope subuniverses.** Inserted domain conjuncts for tope families are a practical elaboration trick; cleaner tope subuniverses tracking domains?
 4. **Layer stratification.** Cubes/topes depending on types more liberally than paper RSTT—consistency impact?
@@ -78,3 +78,13 @@ When answering an item above:
 2. Mark **verified** vs **inferred**.
 3. Update [sources.md](sources.md) with access date.
 4. Avoid pasting long copyrighted passages—paraphrase, quote short phrases, cite URLs.
+
+---
+
+## H. Pointers into expanded notes
+
+| Topic | Doc |
+|-------|-----|
+| Split extensions, MPL, solver, Conjecture 5.9 | [11-metatheory-and-semantics.md](11-metatheory-and-semantics.md) |
+| Yoneda / sHoTT / cofibration narratives | [12-formalization-case-studies.md](12-formalization-case-studies.md) |
+| Arctic Shift dump sizes + API results | [13-reddit-methodology-arctic-shift.md](13-reddit-methodology-arctic-shift.md) |

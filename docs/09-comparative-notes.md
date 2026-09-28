@@ -52,6 +52,12 @@ Both teach “functions on an interval with fixed faces.” A student who knows 
 
 ---
 
+
+### 2.6 Metatheoretic status (system paper)
+
+Cubical Agda’s metatheory is a decades-long cubical TT / canonicity literature. For Rzk, [arXiv:2607.12207](https://arxiv.org/abs/2607.12207) supplies the first published **faithfulness** proof of a translation RSTT → declarative Rzk and **conservativity on ext-style derivations**, with **full conservativity conjectural** (Conjecture 5.9). That is a different kind of “comparison to the paper semantics” than Cubical Agda’s relation to CCHM — closer to “does the assistant exceed the calculus we named?” Detail: [11-metatheory-and-semantics.md](11-metatheory-and-semantics.md).
+
+
 ## 3. Rzk vs redtt / cooltt / RedPRL
 
 The **red\*** family (RedPRL Development Team; OCaml) explores **Cartesian cubical** type theory with interactive holes (Epigram/Agda/Idris lineage). Sterling’s note *redtt and the future of Cartesian cubical type theory* (<https://www.jonmsterling.com/sterling-2020-epa/>) describes cooltt’s push toward definitional η for cofibration disjunctions.
@@ -146,4 +152,4 @@ Do not confuse **free-foil / SOAS / E-unification** with Cubical Agda:
 
 ## 10. Open comparison questions
 
-See [10-open-questions.md](10-open-questions.md) for follow-ups (e.g. encoding RSTT in Cubical Agda with rewrites; conservativity beyond ext-style hypotheses; performance vs Agda on shared lemmas).
+See [10-open-questions.md](10-open-questions.md) and [11-metatheory-and-semantics.md](11-metatheory-and-semantics.md) for follow-ups (e.g. encoding RSTT in Cubical Agda with rewrites; **Conjecture 5.9** full conservativity; performance vs Agda on shared lemmas; directed univalence comparisons).

@@ -113,3 +113,20 @@ These are **orthogonal** to the mathematical comparison with Cubical Agda: they 
 ## Takeaway for readers of these notes
 
 If the goal is **synthetic ∞-category theorems in the Riehl–Shulman style**, Rzk + sHoTT is currently the dedicated executable path. If the goal is **computational univalence / HITs / classical HoTT libraries**, use Cubical Agda (or Coq-HoTT / UniMath). If the goal is **diagrammatic n-category calculation**, try homotopy.io or Catt. If the goal is **foundational directed TT design**, read North / Weaver–Licata / modal Rzk papers—and expect less library maturity than sHoTT’s Segal–Yoneda core.
+
+---
+
+## Citation-grounded feature matrix
+
+Finer table than the high-level map above. Cells are *verified* against the cited source unless marked *inferred*.
+
+| Feature | Rzk / RSTT | Cubical Agda | Weaver–Licata bicubical | homotopy.io / Catt |
+|---------|------------|--------------|-------------------------|--------------------|
+| Directed 1-cells as data | Yes — homs via extension out of `2` / `Δ¹` ([arXiv:1705.07442](https://arxiv.org/abs/1705.07442)) | No — paths invertible up to higher paths | Yes — directed univalence model (LICS 2020) | Higher cells in globular/pasting syntax |
+| Extension / boundary computation | Arbitrary (esp. simplicial) topes ([related](https://rzk-lang.github.io/rzk/en/latest/related/); [arXiv:2309.08340](https://arxiv.org/abs/2309.08340)) | Cubical interval / Kan ops | Bicubes | N/A (diagram isotopy / `coh`) |
+| Segal / Rezk as *properties* of types | Yes | N/A | Different directed stack | N/A |
+| Machine-checked ∞-Yoneda | Yes — [arXiv:2309.08340](https://arxiv.org/abs/2309.08340) | Not in RSTT form | Not claimed | Not a HoTT library |
+| Conservativity vs paper RSTT | Faithful + ext-style conservative; full conj. ([arXiv:2607.12207](https://arxiv.org/abs/2607.12207) Thm. 5.8 / Conj. 5.9) | — | — | — |
+| Primary UX | Literate `rzk-1` + VS Code / games | Agda interactive | Agda model code | Mouse diagrams / pasting text |
+
+Metatheory deep dive: [11-metatheory-and-semantics.md](11-metatheory-and-semantics.md). Formalization narratives: [12-formalization-case-studies.md](12-formalization-case-studies.md).

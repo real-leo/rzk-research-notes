@@ -107,3 +107,31 @@ Kudasov–Sim–Ahrens ([arXiv:2607.12207](https://arxiv.org/abs/2607.12207)) se
 ### Parallel directed approaches (pointers only)
 
 For contrast—not Rzk semantics—see North’s directed HoTT proposals ([arXiv:1807.10566](https://arxiv.org/abs/1807.10566)) and Weaver–Licata’s bicubical directed univalence model (LICS 2020). Detail in [09-comparative-notes.md](09-comparative-notes.md).
+
+---
+
+## Shapes cookbook (as in the system paper tutorial)
+
+Concrete Rzk shape definitions used throughout sHoTT / the system paper tutorial ([arXiv:2607.12207](https://arxiv.org/abs/2607.12207) §2.2; *verified*):
+
+| Shape | Cube | Tope (informal) | Role |
+|-------|------|-----------------|------|
+| `Δ¹` | `2` | `TOP` | Directed 1-simplex / arrow domain |
+| `Δ²` | `2 × 2` | `s ≤ t` | Commutative triangle / composition witness |
+| `Λ²₁` | `2 × 2` | `(s ≡ 0₂) ∨ (t ≡ 1₂)` | Inner horn (Segal locality) |
+| `Δ³` | `2 × 2 × 2` | `(r ≤ s) ∧ (s ≤ t)` | Tetrahedron / 3-simplex coherences |
+
+**Hom / hom2 pattern.** `hom A x y` is `(t : Δ¹) → A [ t ≡ 0₂ ↦ x, t ≡ 1₂ ↦ y ]`. `hom2` pins three boundary edges of `Δ²` to given homs — a filled triangle saying `h` composites `f` and `g`. Restriction computation + tope solver make endpoint/edge applications reduce without propositional transport.
+
+**Cofibration composition (shape calculus).** Riehl–Shulman Thm. 4.4 appears in Rzk as an equivalence between extending along `φ ⊢ χ` and factoring through intermediate `ψ` (`cofibration-composition` in the system paper). This is pure extension-type algebra — a good drill before Segal/Yoneda. Detail: [12-formalization-case-studies.md](12-formalization-case-studies.md).
+
+## Directed univalence and modalities (literature status)
+
+| Line | What is documented | Maturity |
+|------|--------------------|----------|
+| RSTT 2017 | No directed univalence axiom; focuses Segal/Rezk + covariant Yoneda | Published |
+| Rzk modalities | Experimental `♭`/`♯`/`ᵒᵖ` (Triangulated TT–style); mode theory parameterized | Unstable surface syntax (upstream docs) |
+| Talipov–Kudasov | Cited in [arXiv:2607.12207](https://arxiv.org/abs/2607.12207) intro as ongoing directed-univalence / modal Rzk work (**2026**) | Retrieve that paper before detailed claims |
+| Weaver–Licata LICS 2020 | Constructive **bicubical** model of directed univalence + Agda model formalization | Parallel geometry — not Rzk’s simplicial shapes |
+
+Deeper metatheory (split extensions, conservativity conjecture): [11-metatheory-and-semantics.md](11-metatheory-and-semantics.md).

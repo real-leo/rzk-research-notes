@@ -2,7 +2,7 @@
 
 Dates are publication or release dates where known. Links accessed during research on **2026-09-28** (Asia/Singapore, UTC+8), unless noted.
 
-**Method note.** We paraphrase and cite; we do **not** paste long verbatim copyrighted passages. Short phrases in quotes are for terminology anchors only. Twitter/X could **not** be searched live (blocked). Reddit HTML/JSON was network-blocked; Reddit URLs below are from Google `site:reddit.com` indexes—see [08-community-and-discourse.md](08-community-and-discourse.md).
+**Method note.** We paraphrase and cite; we do **not** paste long verbatim copyrighted passages. Short phrases in quotes are for terminology anchors only. Twitter/X could **not** be searched live (blocked). Reddit HTML/JSON was often network-blocked; a later pass used the **arctic_shift API** ([13-reddit-methodology-arctic-shift.md](13-reddit-methodology-arctic-shift.md)). Some Reddit URLs below remain from Google `site:reddit.com` indexes—see [08-community-and-discourse.md](08-community-and-discourse.md).
 
 ---
 
@@ -31,11 +31,14 @@ Dates are publication or release dates where known. Links accessed during resear
 6. Nikolai Kudasov, Emily Riehl, Jonathan Weinberger. *Formalizing the ∞-categorical Yoneda lemma*. CPP 2024 / POPL 2024 workshops.  
    https://arxiv.org/abs/2309.08340 · https://doi.org/10.1145/3636501.3636945  
    Conference page: https://popl24.sigplan.org/details/CPP-2024-papers/6/Formalizing-the-categorical-Yoneda-lemma  
-   Companion: https://emilyriehl.github.io/yoneda/ · https://emilyriehl.github.io/yoneda/CPP-2024/
+   Companion: https://emilyriehl.github.io/yoneda/ · https://emilyriehl.github.io/yoneda/CPP-2024/  
+   (First machine-checked ∞-Yoneda; circularity fix → arXiv:1705.07442v5; 1-cat comparisons in agda-unimath / Lean.)
+   Notes digest: [12-formalization-case-studies.md](12-formalization-case-studies.md).
 
 7. Nikolai Kudasov, Violetta Sim, Benedikt Ahrens. *Rzk: a Proof Assistant for Synthetic ∞-Categories*.  
    https://arxiv.org/abs/2607.12207  
-   (Declarative vs algorithmic Rzk; faithfulness/conservativity; implementation account.)
+   (Declarative vs algorithmic Rzk; faithfulness; conservativity Thm. 5.8 / Conjecture 5.9; split extension types; tope solver; sHoTT ~25k LOC snapshot.)
+   Notes digest: [11-metatheory-and-semantics.md](11-metatheory-and-semantics.md), [12-formalization-case-studies.md](12-formalization-case-studies.md).
 
 ---
 
@@ -163,13 +166,24 @@ Queries for `Rzk`, `rzk-lang`, `sHoTT`, and close variants did **not** surface a
 - https://www.reddit.com/r/homotopytypetheory/ — subreddit hub (exists; mostly non-Rzk HoTT)
 
 
+
+
+## Arctic Shift / Reddit archive tooling
+
+- Arthur Heitmann. *Project Arctic Shift* — https://github.com/ArthurHeitmann/arctic_shift  
+  README, `api/README.md`, `download_links.md`, `file_content_explanations.md` (cloned 2026-09-28).  
+  API base: https://arctic-shift.photon-reddit.com · Search UI · Download tool.  
+  Evaluation: [13-reddit-methodology-arctic-shift.md](13-reddit-methodology-arctic-shift.md).
+- Academic Torrents aggregate dump ~3.12 TB (2005-06–2024-12), infohash `ba051999301b109eab37d16f027b3f49ade2de13` (size from torrent listing page).
+
 ## Unreachable / incomplete this pass
 
 | Source class | Status |
 |--------------|--------|
 | Twitter/X posts & threads | **Not retrieved** (search/Nitter blocked); no permalinks verified |
-| Reddit live HTML / JSON / PullPush | **Blocked or rate-limited**; used Google snippets only |
-| Dedicated Reddit threads about Rzk / rzk-lang / sHoTT | **None verified** this pass (scarcity is a finding) |
+| Reddit live HTML / JSON / PullPush | Often **blocked or rate-limited**; Google snippets + **arctic_shift API** |
+| Dedicated Reddit threads about Rzk / rzk-lang / sHoTT | **None verified** (Google + arctic_shift scoped `rzk` queries; scarcity is a finding) |
+| arctic_shift full dump ingest | **Not attempted** (multi-TB; see [13](13-reddit-methodology-arctic-shift.md)) |
 | Full Zulip archives | Not scraped (privacy / login) |
 | Some publisher PDFs behind paywalls | Used arXiv HTML/PDF where possible |
 | Every paper citing 1705.07442 since 2024 | Sampled only (Weinberger Chevalley; fibered; limits; system paper) |
