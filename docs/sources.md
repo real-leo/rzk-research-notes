@@ -1,55 +1,152 @@
 # Sources and bibliography
 
-Dates are publication or release dates where known. Links accessed during research on **2026-09-28** (Asia/Singapore).
+Dates are publication or release dates where known. Links accessed during research on **2026-09-28** (Asia/Singapore, UTC+8), unless noted.
 
-## Foundational papers
+**Method note.** We paraphrase and cite; we do **not** paste long verbatim copyrighted passages. Short phrases in quotes are for terminology anchors only. Twitter/X could **not** be searched live (blocked); see [08-community-and-discourse.md](08-community-and-discourse.md).
+
+---
+
+## Foundational papers (RSTT / sHoTT math)
 
 1. Emily Riehl & Michael Shulman. *A type theory for synthetic ∞-categories*. Higher Structures 1(1), 147–224, **2017**.  
    https://arxiv.org/abs/1705.07442  
-   (Corrected post-publication v5 acknowledges typos noted by Cnossen, Kudasov, Licata, Sattler.)
+   (Corrected post-publication v5 acknowledges typos / fixes noted by Cnossen, Kudasov, Licata, Sattler; circularity fix related to formalization.)
 
-2. Nikolai Kudasov, Emily Riehl, Jonathan Weinberger. *Formalizing the ∞-categorical Yoneda lemma*. **2023**.  
-   https://arxiv.org/abs/2309.08340
+2. Ulrik Buchholtz & Jonathan Weinberger. *Synthetic fibered (∞,1)-category theory*. Higher Structures 7 (2023), 74–165.  
+   https://arxiv.org/abs/2105.01724 · https://doi.org/10.21136/HS.2023.04
 
-3. Nikolai Kudasov. *Functional Pearl: Dependent type inference via free higher-order unification*. **2022**.  
+3. César Bardomiano Martínez. *Limits and colimits of synthetic ∞-categories*.  
+   https://arxiv.org/abs/2202.12386 · MSCS vol. 35 (2025) e24 (publisher PDF via Cambridge)
+
+4. Jonathan Weinberger. *Generalized Chevalley criteria in simplicial homotopy type theory*. **2024**.  
+   https://arxiv.org/abs/2403.08190
+
+5. Emily Riehl. *Could ∞-category theory be taught to undergraduates?* Notices of the AMS, May **2023**.  
+   https://www.ams.org/journals/notices/202305/noti2692/noti2692.html
+
+---
+
+## Rzk formalization and system papers
+
+6. Nikolai Kudasov, Emily Riehl, Jonathan Weinberger. *Formalizing the ∞-categorical Yoneda lemma*. CPP 2024 / POPL 2024 workshops.  
+   https://arxiv.org/abs/2309.08340 · https://doi.org/10.1145/3636501.3636945  
+   Conference page: https://popl24.sigplan.org/details/CPP-2024-papers/6/Formalizing-the-categorical-Yoneda-lemma  
+   Companion: https://emilyriehl.github.io/yoneda/ · https://emilyriehl.github.io/yoneda/CPP-2024/
+
+7. Nikolai Kudasov, Violetta Sim, Benedikt Ahrens. *Rzk: a Proof Assistant for Synthetic ∞-Categories*.  
+   https://arxiv.org/abs/2607.12207  
+   (Declarative vs algorithmic Rzk; faithfulness/conservativity; implementation account.)
+
+---
+
+## Implementation / SOAS / tope solver
+
+8. Nikolai Kudasov. *Functional Pearl: Dependent type inference via free higher-order unification*. **2022**.  
    https://arxiv.org/abs/2204.05653
 
-4. Nikolai Kudasov. *E-Unification for Second-Order Abstract Syntax*. FSCD 2023, LIPIcs 260.  
+9. Nikolai Kudasov. *E-Unification for Second-Order Abstract Syntax*. FSCD 2023, LIPIcs 260.  
    https://doi.org/10.4230/LIPIcs.FSCD.2023.10 · https://arxiv.org/abs/2302.05815
 
-5. Nikolai Kudasov. *Experimental prover for Tope logic*. SCAN 2023, pp. 37–39.  
-   https://www.mathnet.ru/ConfLogos/2220/abstracts.pdf#page=38
+10. Nikolai Kudasov. *Experimental prover for Tope logic*. SCAN 2023, pp. 37–39.  
+    https://www.mathnet.ru/ConfLogos/2220/abstracts.pdf#page=38
 
-## Modal / TTT background (as cited by Rzk docs)
+11. Dougal Maclaurin, Alexey Radul, Adam Paszke. *The Foil: Capture-Avoiding Substitution With No Sharp Edges*. IFL 2022.  
+    ACM DL entry via foil citations in free-foil README.
 
-- Gratzer, Weinberger, Buchholtz — Triangulated Type Theory (see Rzk `reference/modalities.rzk.md` footnotes for the precise bibliographic pointers used upstream).
+12. Nikolai Kudasov, Renata Shakirova, Egor Shalagin, Karina Tyulebaeva. *Free Foil: Generating Efficient and Scope-Safe Abstract Syntax*. ICCQ 2024.  
+    https://doi.org/10.1109/ICCQ60895.2024.10576867 · https://github.com/fizruk/free-foil · arXiv companion commonly linked from README
+
+---
+
+## Cubical / Cartesian cubical / related assistants
+
+13. Cyril Cohen, Thierry Coquand, Simon Huber, Anders Mörtberg. *Cubical Type Theory: A Constructive Interpretation of the Univalence Axiom*. TYPES 2015 / LIPIcs.  
+    https://doi.org/10.4230/LIPIcs.TYPES.2015.5
+
+14. Andrea Vezzosi, Anders Mörtberg, et al. Cubical Agda papers / docs.  
+    https://agda.readthedocs.io/en/latest/language/cubical.html  
+    PDF commonly cited: https://staff.math.su.se/anders.mortberg/papers/cubicalagda2.pdf
+
+15. Jonathan Sterling. *redtt and the future of Cartesian cubical type theory* (EPA note).  
+    https://www.jonmsterling.com/sterling-2020-epa/
+
+16. Angiuli–Brunerie–Coquand–Favonia–Harper–Licata et al. Cartesian cubical type theory (syntax/models).  
+    e.g. https://research.chalmers.se/publication/547296/file/547296_Fulltext.pdf
+
+---
+
+## Directed type theory (non-RSTT pointers)
+
+17. Paige Randall North. *Towards a directed homotopy type theory*. MFPS / [arXiv:1807.10566](https://arxiv.org/abs/1807.10566).
+
+18. Matthew Z. Weaver & Daniel R. Licata. *A Constructive Model of Directed Univalence in Bicubical Sets*. LICS 2020.  
+    https://dl.acm.org/doi/10.1145/3373718.3394794 · author PDF https://dlicata.wescreates.wesleyan.edu/pubs/wl20bicubical/wl20bicubical.pdf
+
+---
+
+## Graphical / pasting higher categories
+
+19. Lukas Heidemann, Nick Hu, Jamie Vicary, et al. *homotopy.io: A Proof Assistant for Finitely-Presented Globular n-Categories*. FSCD 2024.  
+    https://drops.dagstuhl.de/storage/00lipics/lipics-vol299-fscd2024/LIPIcs.FSCD.2024.30/LIPIcs.FSCD.2024.30.pdf  
+    Tool: https://homotopy.io · nLab: https://ncatlab.org/nlab/show/homotopy.io
+
+20. Eric Finster et al. Catt / catt.io — pasting-scheme proof assistants.  
+    https://github.com/ericfinster/catt · teaching notes https://www.cl.cam.ac.uk/~jv258/mgs2023/
+
+---
+
+## Talks, teaching, encyclopedic pages
+
+21. Nikolai Kudasov. *Rzk proof assistant and simplicial HoTT formalization*. HoTTEST, **2023-10-05**.  
+    Slides: https://www.math.uwo.ca/faculty/kapulkin/seminars/hottestfiles/Kudasov-2023-10-05-HoTTEST.pdf  
+    Demo: https://github.com/fizruk/hottest-2023-rzk-demo
+
+22. Emily Riehl. *Formalizing ∞-category theory in the Rzk proof assistant* (video).  
+    https://www.youtube.com/watch?v=-voVwvoa5QI
+
+23. ITP School Regensburg 2023 — Rzk demos.  
+    https://itp-school-2023.github.io · https://fizruk.github.io/itp-school-2023-demo/
+
+24. ICERM workshop *Teaching Higher Category Theory with Computers* (Aug **2026**).  
+    https://icerm.brown.edu/program/topical_workshop/tw-26-thc
+
+25. nLab: *Rzk*. https://ncatlab.org/nlab/show/Rzk (page footer revision **2026-07-15**)
+
+---
 
 ## Upstream software (survey snapshot)
 
 | Artifact | Location | Notes |
 |----------|----------|-------|
-| Rzk source | https://github.com/rzk-lang/rzk | Default branch `develop`; BSD-3 package license |
+| Rzk source | https://github.com/rzk-lang/rzk | Default branch `develop`; BSD-3 |
 | Release v0.11.3 | https://github.com/rzk-lang/rzk/releases/tag/v0.11.3 | **2026-08-31** |
-| CITATION.cff | repo root | version 0.11.3, date-released 2026-08-31 |
 | MkDocs English docs | https://rzk-lang.github.io/rzk/ | Built from `docs/docs/en/` |
+| Related assistants page | https://rzk-lang.github.io/rzk/en/latest/related/ | Agda, Cubical Agda, red*, Coq, Lean, … |
+| Community page | https://rzk-lang.github.io/rzk/en/latest/community/ | Zulip CTA |
+| Official blog | https://rzk-lang.github.io/rzk/en/blog/ | Formatter post 2023-12-24; blog launch 2023-12-10 |
 | Hackage | http://hackage.haskell.org/package/rzk | |
-| sHoTT | https://github.com/rzk-lang/sHoTT | |
+| sHoTT | https://github.com/rzk-lang/sHoTT · https://rzk-lang.github.io/sHoTT/ | |
 | yoneda | https://github.com/emilyriehl/yoneda | |
 | vscode-rzk | https://github.com/rzk-lang/vscode-rzk | |
 | rzk-game | https://github.com/rzk-lang/rzk-game | |
 | simple-topes | https://github.com/fizruk/simple-topes | |
-| free-foil | https://github.com/fizruk/free-foil | v0.4.x used by Rzk |
 | Zulip | https://rzk-lang.zulipchat.com | |
+| Org landing | https://github.com/rzk-lang | |
 
-## Local research checkout
+---
 
-- Path: `/workspace/rzk-analysis/rzk` (shallow/full clone of `rzk-lang/rzk` on `develop`)
-- Commit observed at research start: `01b081e` (*Merge pull request #362 from rzk-lang/warn-tope-family-domain*) — tip may move; version identity for notes is **v0.11.3** + develop docs/code read on 2026-09-28.
+## Modal / TTT background (as cited by Rzk docs)
 
-## Key in-repo paths consulted
+- Gratzer, Weinberger, Buchholtz — Triangulated Type Theory / multimodal lines (see Rzk `reference/modalities.rzk.md` footnotes for upstream’s precise pointers).
+- Talipov & Kudasov — directed univalence / modal Rzk work cited in arXiv:2607.12207 (retrieve exact bibliographic key from that PDF when quoting).
 
-- `README.md`, `CONTRIBUTORS.md`, `CITATION.cff`, `rzk.yaml`
-- `rzk/package.yaml`, `rzk/app/Main.hs`, `rzk/ChangeLog.md`
-- `rzk/src/Rzk/TypeCheck/**`, `rzk/src/Language/Rzk/Foil/**`, `rzk/src/Rzk/Project/Config.hs`
-- `docs/docs/en/index.md`, `related.md`, `tools.md`, `community.md`, `getting-started/**`, `reference/**`
-- `.github/workflows/*.yml`, `stack.yaml`, `cabal.project`, `flake.nix`
+---
+
+## Unreachable / incomplete this pass
+
+| Source class | Status |
+|--------------|--------|
+| Twitter/X posts & threads | **Not retrieved** (search/Nitter blocked); no permalinks verified |
+| Full Zulip archives | Not scraped (privacy / login) |
+| Some publisher PDFs behind paywalls | Used arXiv HTML/PDF where possible |
+| Every paper citing 1705.07442 since 2024 | Sampled only (Weinberger Chevalley; fibered; limits; system paper) |

@@ -81,3 +81,29 @@ From Rzk v0.8, an experimental **modal extension** supports Triangulated Type Th
 ## Design tradeoff vs “native” directed TT
 
 Riehl–Shulman (and thus Rzk) accept **extra non-Segal types** in the universe: not every type is a category. The payoff is a full HoTT toolkit (Π, Σ, universes, function extensionality-style axioms for extensions) while still carving out synthetic (∞,1)-categories. A “pure” directed type theory might avoid junk types but historically struggles with exponentiability, fibration variance, and coherence boilerplate—exactly the problems the paper’s indirect route sidesteps.
+
+---
+
+## Related mathematical developments (post-2017)
+
+These are **not** part of the original Riehl–Shulman text but shape how people use Rzk today. Paraphrased from abstracts and library About pages; see [sources.md](sources.md).
+
+### Fibered synthetic (∞,1)-category theory
+
+Buchholtz–Weinberger (*Synthetic fibered (∞,1)-category theory*, Higher Structures 7, 2023; [arXiv:2105.01724](https://arxiv.org/abs/2105.01724)) develop cocartesian fibrations, categorical fibers, and Chevalley-style recognition principles internally in simplicial HoTT. Weinberger’s follow-up *Generalized Chevalley criteria* ([arXiv:2403.08190](https://arxiv.org/abs/2403.08190)) extends recognition along more general shape inclusions. sHoTT treats this as a major formalization target (cocartesian Yoneda still heavy).
+
+### Limits and colimits
+
+Bardomiano Martínez ([arXiv:2202.12386](https://arxiv.org/abs/2202.12386); MSCS 2025) defines (co)limits for diagrams in Segal types and studies preservation (e.g. right adjoints preserving limits). Corresponding sHoTT modules exist / are in progress (`13-limits` lineage).
+
+### Machine-checked ∞-Yoneda
+
+Kudasov–Riehl–Weinberger ([arXiv:2309.08340](https://arxiv.org/abs/2309.08340), CPP 2024) give the first formalized ∞-categorical Yoneda (and dependent Yoneda) in Rzk, and record that formalization exposed a circularity in an “only if” direction of a published RSTT proposition—later corrected in arXiv:1705.07442v5. Takeaway for readers: synthetic proofs are short *because* naturality is often automatic, but the checker still catches real gaps.
+
+### System-level account of Rzk’s type theory
+
+Kudasov–Sim–Ahrens ([arXiv:2607.12207](https://arxiv.org/abs/2607.12207)) separate **declarative Rzk** (split extension types + coercion-free subtyping) from **algorithmic Rzk** (bidirectional checking + tope solver), and prove a translation from RSTT that is faithful and (on an ext-style fragment) conservative. Useful when asking “is Rzk exactly the 2017 paper?”—answer: **refining extension** of it, with an explicit metatheoretic parameter layer making schematic paper theorems into first-class parameters.
+
+### Parallel directed approaches (pointers only)
+
+For contrast—not Rzk semantics—see North’s directed HoTT proposals ([arXiv:1807.10566](https://arxiv.org/abs/1807.10566)) and Weaver–Licata’s bicubical directed univalence model (LICS 2020). Detail in [09-comparative-notes.md](09-comparative-notes.md).
