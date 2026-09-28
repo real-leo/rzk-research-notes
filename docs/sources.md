@@ -2,7 +2,7 @@
 
 Dates are publication or release dates where known. Links accessed during research on **2026-09-28** (Asia/Singapore, UTC+8), unless noted.
 
-**Method note.** We paraphrase and cite; we do **not** paste long verbatim copyrighted passages. Short phrases in quotes are for terminology anchors only. Twitter/X could **not** be searched live (blocked); see [08-community-and-discourse.md](08-community-and-discourse.md).
+**Method note.** We paraphrase and cite; we do **not** paste long verbatim copyrighted passages. Short phrases in quotes are for terminology anchors only. Twitter/X could **not** be searched live (blocked). Reddit HTML/JSON was network-blocked; Reddit URLs below are from Google `site:reddit.com` indexes—see [08-community-and-discourse.md](08-community-and-discourse.md).
 
 ---
 
@@ -142,11 +142,34 @@ Dates are publication or release dates where known. Links accessed during resear
 
 ---
 
+---
+
+## Reddit (Google-indexed; sparse for Rzk)
+
+Accessed indirectly via Google `site:reddit.com` on **2026-09-28** (Asia/Singapore). Direct Reddit fetches from the research box were blocked.
+
+### No primary Rzk threads verified
+
+Queries for `Rzk`, `rzk-lang`, `sHoTT`, and close variants did **not** surface a thread primarily about the assistant. Do not invent Reddit buzz that is not there.
+
+### Adjacent threads (mathematical / HoTT neighbours)
+
+- https://www.reddit.com/r/dependent_types/comments/6dnmpg/a_type_theory_for_synthetic_categories/ — Riehl–Shulman synthetic ∞-categories link-post (**2017-05-27**)
+- https://www.reddit.com/r/math/comments/9g6rtz/the_synthetic_theory_of_categories_vs_the/ — Riehl synthetic ∞-categories talk slides (**2018-09-16**)
+- https://www.reddit.com/r/types/comments/7pkwbh/homotopy_type_theory_from_computational/ — computational HoTT; comment mentions simplicial + cubical TT
+- https://www.reddit.com/r/dependent_types/comments/42j8vu/towards_a_directed_homotopy_type_theory_based_on/ — Nuyts directed HoTT
+- https://www.reddit.com/r/agda/comments/e9pgbw/cubical_agda_a_dependently_typed_programming/ — Cubical Agda paper
+- https://www.reddit.com/r/homotopytypetheory/comments/s8wp2b/anders_cchmhts_theorem_prover/ — CCHM/HTS prover discussion
+- https://www.reddit.com/r/homotopytypetheory/ — subreddit hub (exists; mostly non-Rzk HoTT)
+
+
 ## Unreachable / incomplete this pass
 
 | Source class | Status |
 |--------------|--------|
 | Twitter/X posts & threads | **Not retrieved** (search/Nitter blocked); no permalinks verified |
+| Reddit live HTML / JSON / PullPush | **Blocked or rate-limited**; used Google snippets only |
+| Dedicated Reddit threads about Rzk / rzk-lang / sHoTT | **None verified** this pass (scarcity is a finding) |
 | Full Zulip archives | Not scraped (privacy / login) |
 | Some publisher PDFs behind paywalls | Used arXiv HTML/PDF where possible |
 | Every paper citing 1705.07442 since 2024 | Sampled only (Weinberger Chevalley; fibered; limits; system paper) |

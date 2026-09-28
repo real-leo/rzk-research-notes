@@ -6,11 +6,12 @@ Research prompts for later passes on Rzk / sHoTT / related work. Distinguishes *
 
 ## A. Gaps in *this* notes repository’s evidence
 
-1. **Twitter/X corpus.** Live search via Nitter / `site:x.com` failed in the research environment (2026-09-28). Recover dated posts/threads from Riehl, Kudasov/`fizruk`, and HoTT accounts; archive permalinks in [08-community-and-discourse.md](08-community-and-discourse.md).
-2. **Zulip content.** We link the Zulip but did not scrape private/public streams. With permission, summarize recurring themes (solver pain points, implicits roadmap, teaching).
-3. **Blog completeness.** Only two posts listed on the EN blog index at research time; check whether older announcements live only in GitHub Releases / Russian blog.
-4. **Exact sHoTT metrics.** System paper cites ~25k LOC / ~1500 declarations—re-measure on current `main`/`develop` tips for these notes’ next snapshot.
-5. **Soundness fix migration.** Document which sHoTT commits correspond to identity-type / subtyping polarity fixes (PRs #269/#270 lineage mentioned in arXiv:2607.12207) for historians of the library.
+1. **Reddit corpus.** Re-fetch when Reddit is reachable; confirm still no Rzk-titled threads and archive any new ones (see [08](08-community-and-discourse.md)).
+2. **Twitter/X corpus.** Live search via Nitter / `site:x.com` failed in the research environment (2026-09-28). Recover dated posts/threads from Riehl, Kudasov/`fizruk`, and HoTT accounts; archive permalinks in [08-community-and-discourse.md](08-community-and-discourse.md).
+3. **Zulip content.** We link the Zulip but did not scrape private/public streams. With permission, summarize recurring themes (solver pain points, implicits roadmap, teaching).
+4. **Blog completeness.** Only two posts listed on the EN blog index at research time; check whether older announcements live only in GitHub Releases / Russian blog.
+5. **Exact sHoTT metrics.** System paper cites ~25k LOC / ~1500 declarations—re-measure on current `main`/`develop` tips for these notes’ next snapshot.
+6. **Soundness fix migration.** Document which sHoTT commits correspond to identity-type / subtyping polarity fixes (PRs #269/#270 lineage mentioned in arXiv:2607.12207) for historians of the library.
 
 ---
 

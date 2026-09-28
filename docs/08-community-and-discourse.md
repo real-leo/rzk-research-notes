@@ -2,7 +2,7 @@
 
 Public venues, talks, blogs, and social-media signals around **Rzk**, **sHoTT**, and Riehl–Shulman synthetic ∞-category formalization. Dates use Asia/Singapore labels when converted from UTC; otherwise we keep the source’s stated date.
 
-**Verification note.** Zulip, GitHub, arXiv, YouTube, and official MkDocs pages were reachable during research (2026-09-28). **Direct Twitter/X (and Nitter) search was not usable** from this environment (blocked / JS-walled search). X highlights below are therefore sparse and drawn from **secondary indexes** (nLab, conference pages, GitHub org) plus known public handles—not from a live scrape of threads. Treat X coverage as a **gap**.
+**Verification note.** Zulip, GitHub, arXiv, YouTube, and official MkDocs pages were reachable during research (2026-09-28). **Direct Twitter/X (and Nitter) search was not usable** from this environment (blocked / JS-walled search). **Direct Reddit** (`reddit.com` / `old.reddit.com` HTML & JSON, PullPush) was also **network-blocked or rate-limited**; Reddit coverage below is reconstructed from **Google `site:reddit.com` indexes and public result snippets**, not from logged-in Reddit API dumps. Treat both X and deep Reddit comment trees as **partial / gap-prone**.
 
 ---
 
@@ -56,6 +56,53 @@ Further changelog-level discourse lives in GitHub Releases / Stackage package no
 
 ---
 
+---
+
+## Reddit discourse (sparse for Rzk itself)
+
+**Bottom line.** As of the 2026-09-28 pass, we found **no Google-indexed Reddit thread whose primary subject is the Rzk proof assistant, `rzk-lang`, or the sHoTT library**. Searches for those strings mostly collide with unrelated usernames or return empty relevance. Public Rzk talk therefore still concentrates on **Zulip + GitHub**, not Reddit.
+
+What *does* appear on Reddit is **adjacent** mathematical / HoTT discourse: Riehl–Shulman’s 2017 paper, Riehl talks on synthetic ∞-categories, computational HoTT (cubical vs simplicial mentioned in passing), directed HoTT proposals, and Cubical Agda. That background helps situate how little Reddit has absorbed the *assistant* even when it knows the *math*.
+
+**Method limits (*honest*).** Live fetches of `old.reddit.com` / `.json` endpoints returned 403 “network policy” blocks; PullPush archive API rate-limited agent traffic. Thread titles, dates, score hints, and comment gists below come from **search-engine snippets**. Comment bodies were **not** re-read in full on Reddit itself—do not treat gists as complete transcripts.
+
+### Subreddits checked (existence / relevance)
+
+| Subreddit | Notes for this topic |
+|-----------|----------------------|
+| [r/dependent_types](https://www.reddit.com/r/dependent_types/) | Best early hit: link-post of Riehl–Shulman synthetic ∞-categories paper (2017) |
+| [r/math](https://www.reddit.com/r/math/) | Riehl talks / ∞-category culture; not Rzk-specific |
+| [r/types](https://www.reddit.com/r/types/) | Computational HoTT thread mentioning simplicial *and* cubical type theory |
+| [r/homotopytypetheory](https://www.reddit.com/r/homotopytypetheory/) | **Exists**; cubical / CCHM / learning threads; no Rzk hit in our queries |
+| [r/agda](https://www.reddit.com/r/agda/) | Cubical Agda paper share |
+| [r/haskell](https://www.reddit.com/r/haskell/) | General HoTT curiosity; **no** verified Rzk / `rzk-lang` thread |
+| [r/ProgrammingLanguages](https://www.reddit.com/r/ProgrammingLanguages/) | Occasional “directed HoTT / cubical TT as exotic research” mentions; Riehl named as HoTT motivator in at least one career thread |
+| r/highercategorytheory | Resource lists (e.g. Riehl on simplicial sets); quiet niche |
+
+### Threads closest to Rzk’s mathematical lineage
+
+| Approx. date | Subreddit | Thread | Gist (paraphrased) | URL |
+|--------------|-----------|--------|--------------------|-----|
+| **2017-05-27** | r/dependent_types | *A Type Theory for Synthetic ∞-Categories* | Link-post (~9 pts, ~2 comments) to Riehl–Shulman material; comment points at [arXiv:1705.07442](https://arxiv.org/abs/1705.07442); OP notes continuity with earlier Toronto ideas. **Pre-dates Rzk.** | https://www.reddit.com/r/dependent_types/comments/6dnmpg/a_type_theory_for_synthetic_categories/ |
+| **2018-09-16** | r/math | *The synthetic theory of ∞-categories vs the synthetic theory of ∞-categories…* | Share of Riehl slides (~28 pts); light meta jokes + pointer to video/book—not a formalization discussion. | https://www.reddit.com/r/math/comments/9g6rtz/the_synthetic_theory_of_categories_vs_the/ |
+| **2018-01** (id `7pkwbh`) | r/types | *Homotopy type theory from computational perspective?* | Asks for computational accounts of univalence etc.; replies steer to **cubical** work and, in one comment, name **simplicial type theory** alongside cubical as parallel developments. Useful as rare Reddit co-mention of simplicial TT—not an Rzk review. | https://www.reddit.com/r/types/comments/7pkwbh/homotopy_type_theory_from_computational/ |
+| **2016-01** (id `42j8vu`) | r/dependent_types | *Towards a Directed Homotopy Type Theory based on 4 Kinds of Variance* (Nuyts) | Directed HoTT research share—neighbour to RSTT’s directed goals, different design. | https://www.reddit.com/r/dependent_types/comments/42j8vu/towards_a_directed_homotopy_type_theory_based_on/ |
+| **2019-12** (id `e9pgbw`) | r/agda | *Cubical Agda: A Dependently Typed Programming Language…* | Paper announcement for Cubical Agda—the usual Reddit “computational HoTT assistant” reference point (contrast with Rzk’s simplicial niche; see [09](09-comparative-notes.md)). | https://www.reddit.com/r/agda/comments/e9pgbw/cubical_agda_a_dependently_typed_programming/ |
+| **2022-01** (id `s8wp2b`) | r/homotopytypetheory | *Anders CCHM/HTS Theorem Prover* | Cubical / CCHM tooling interest inside the HoTT subreddit—again cubical-centered. | https://www.reddit.com/r/homotopytypetheory/comments/s8wp2b/anders_cchmhts_theorem_prover/ |
+
+### Broader Riehl / ∞-category Reddit (context only)
+
+Examples indexed by Google but **not** about RSTT formalization in Rzk: r/math threads on ∞-categorical monadicity / Riehl–Verity, “question for higher category theorists,” book suggestions naming Riehl, r/mathbooks *Categorical Homotopy Theory*, r/highercategorytheory resource posts linking Riehl’s simplicial-sets note. These show Riehl’s name circulates; they do **not** evidence awareness of the Rzk checker.
+
+### Scarcity interpretation (*inferred*)
+
+1. Rzk’s user base is small and already coordinated on **Zulip**.
+2. Reddit’s HoTT attention skews toward the **HoTT Book**, **Cubical Agda**, and career/learning questions—not experimental simplicial assistants.
+3. The 2017 paper *was* link-posted once in r/dependent_types; six+ years later there is still no obvious “has anyone tried Rzk?” thread in the indexes we saw.
+
+**Follow-up:** when Reddit is reachable, re-run `rzk`, `rzk-lang`, `sHoTT`, `Kudasov`, and “Yoneda”+Riehl+formalization searches inside r/haskell, r/dependent_types, r/homotopytypetheory, and r/ProgrammingLanguages; archive any new threads in the table above.
+
+
 ## Twitter / X highlights (limited)
 
 **Status:** Live `site:x.com` / Nitter queries from the research box did **not** return usable post text (search pages blocked or empty). We therefore **cannot** honestly quote dated threads here.
@@ -85,7 +132,8 @@ If a future pass recovers specific posts, add them as rows:
 
 ## How to engage (practical)
 
-1. Join **Zulip** for questions that are not yet issues.
+1. Join **Zulip** for questions that are not yet issues (Reddit is **not** currently a primary Rzk support channel).
 2. Prefer **sHoTT PRs** for mathematics; **rzk** issues for checker/solver/LSP bugs.
 3. Cite papers with arXiv + DOI when writing notes; link literate identifiers on `emilyriehl.github.io/yoneda` or `rzk-lang.github.io/sHoTT`.
 4. Do not treat Zulip archives as citable publications unless a permalink is stable and the author agrees—summarize with permission when needed.
+5. If posting on Reddit about Rzk, prefer precise links (playground, sHoTT docs, arXiv) so the sparse public trail stays high-signal.

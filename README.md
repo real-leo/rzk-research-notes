@@ -21,7 +21,7 @@ This repository is **not** upstream documentation. It is an independent survey t
 | [docs/05-limitations-and-roadmap.md](docs/05-limitations-and-roadmap.md) | Experimental status, multi-file deps, E-unification, simple-topes |
 | [docs/06-getting-started-notes.md](docs/06-getting-started-notes.md) | Practical first steps for newcomers |
 | [docs/07-related-work-landscape.md](docs/07-related-work-landscape.md) | Map of related proof assistants / formalizations vs Rzk |
-| [docs/08-community-and-discourse.md](docs/08-community-and-discourse.md) | Zulip, blogs, talks; Twitter/X gap noted |
+| [docs/08-community-and-discourse.md](docs/08-community-and-discourse.md) | Zulip, blogs, talks; Reddit (sparse) + Twitter/X gaps |
 | [docs/09-comparative-notes.md](docs/09-comparative-notes.md) | Deeper compare vs Cubical Agda / directed TT / homotopy.io / Catt |
 | [docs/10-open-questions.md](docs/10-open-questions.md) | Follow-up research questions |
 | [docs/sources.md](docs/sources.md) | Bibliography and dated links |
@@ -39,4 +39,4 @@ This repository is **not** upstream documentation. It is an independent survey t
 
 These notes are original English prose for research and learning. Upstream code and docs remain under their own licenses (Rzk package: BSD-3). Cite papers when you reuse mathematical claims.
 
-**Last updated:** 2026-09-28 (Asia/Singapore, UTC+8) — expanded related-work / community / comparative docs.
+**Last updated:** 2026-09-28 (Asia/Singapore, UTC+8) — Reddit discourse pass (sparse coverage documented).
